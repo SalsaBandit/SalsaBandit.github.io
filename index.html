@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Software Engineer</title>
+  <meta
+    name="description"
+    content="Portfolio website for a software engineer building backend and full-stack projects with Python, FastAPI, JavaScript, and PostgreSQL."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="#hero" class="logo">Your Name</a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">New Grad Software Engineer</p>
+        <h1>I build backend and full-stack projects with Python, FastAPI, JavaScript, and PostgreSQL.</h1>
+        <p class="hero-text">
+          I am building practical software projects to grow into backend and full-stack engineering roles.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="YOUR_RESUME_LINK" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">View Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container narrow">
+        <h2>About</h2>
+        <p>
+          I am a recent computer science graduate focused on backend and full-stack development. I enjoy building projects that improve my understanding of APIs, databases, frontend fundamentals, and deployment.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt-bg">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <article class="card">
+            <h3>Frontend</h3>
+            <p>HTML, CSS, JavaScript, responsive design</p>
+          </article>
+          <article class="card">
+            <h3>Backend</h3>
+            <p>Python, FastAPI, REST APIs</p>
+          </article>
+          <article class="card">
+            <h3>Database</h3>
+            <p>PostgreSQL, SQL, schema design</p>
+          </article>
+          <article class="card">
+            <h3>Tools</h3>
+            <p>Git, GitHub, VS Code, Postman</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+          <article class="card project-card">
+            <h3>Task Manager API</h3>
+            <p>
+              A REST API built with FastAPI and PostgreSQL for creating, reading, and managing tasks.
+            </p>
+            <p class="project-stack">FastAPI · Python · PostgreSQL</p>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/task-manager-api" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <h3>Weather Dashboard</h3>
+            <p>
+              A responsive weather app that fetches current weather and forecast data from the OpenWeather API.
+            </p>
+            <p class="project-stack">HTML · CSS · JavaScript · API</p>
+            <div class="project-links">
+              <a href="https://github.com/yourusername/weather-dashboard" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://your-live-demo-link.com" target="_blank" rel="noopener noreferrer">Live Demo</a>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <h3>Next Project</h3>
+            <p>
+              This card can later become your expense tracker, portfolio backend integration, or another full-stack app.
+            </p>
+            <p class="project-stack">Coming soon</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt-bg">
+      <div class="container narrow">
+        <h2>Contact</h2>
+        <p>If you want to reach me, feel free to connect through email, GitHub, or LinkedIn.</p>
+        <div class="contact-links">
+          <a href="mailto:youremail@example.com">youremail@example.com</a>
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Your Name. Built with HTML, CSS, and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
