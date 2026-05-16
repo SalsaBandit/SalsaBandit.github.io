@@ -257,3 +257,17 @@ a {
     padding: 56px 0;
   }
 }
+
+.logo {
+  font-size: 1.1rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: auto;
+}
