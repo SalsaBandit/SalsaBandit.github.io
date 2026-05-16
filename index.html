@@ -19,11 +19,13 @@
 <body>
   <header class="site-header">
     <nav class="navbar container">
-      <a href="#hero" class="logo">Avi Aaron Batchu</a>
-      <img src="avatar.png" alt="Avi Aaron Batchu" class="avatar" />
+      <div class="header-left">
+        <a href="#hero" class="logo">Avi Aaron Batchu</a>
+        <img src="avatar.png" alt="Avi Aaron Batchu" class="avatar" />
+      </div>
 
       <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
-        ☰
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
       </button>
 
       <ul class="nav-links" id="nav-links">
@@ -39,96 +41,119 @@
   <main>
     <section id="hero" class="hero">
       <div class="container hero-content">
-        <p class="eyebrow">B.S. Computer Science | Software Engineer</p>
-        <h1>I build backend and full-stack projects mainly using python and postgresql</h1>
-        <p class="hero-text">
+        <span class="eyebrow animate-up">B.S. Computer Science | Software Engineer</span>
+        <h1 class="animate-up delay-1">
+          I build <span class="text-gradient">backend and full-stack</span> projects mainly using Python and PostgreSQL
+        </h1>
+        <p class="hero-text animate-up delay-2">
           I am building practical software projects to grow into backend and full-stack engineering roles.
         </p>
-        <div class="hero-buttons">
+        <div class="hero-buttons animate-up delay-3">
           <a href="#projects" class="btn btn-primary">View Projects</a>
           <a href="https://drive.google.com/file/d/1RTA124X-1B3apluGOvtMy__Ahcr7vsyl/view?usp=sharing" target="_blank" class="btn btn-secondary">View Resume</a>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section">
+    <section id="about" class="section alt-bg">
       <div class="container narrow">
-        <h2>About</h2>
-        <p>
-          I am a recent computer science graduate focused on backend and full-stack development. I enjoy building projects that improve my understanding of APIs, databases, frontend fundamentals, and deployment.
-        </p>
+        <div class="section-header">
+          <h2>About Me</h2>
+        </div>
+        <div class="card">
+          <p>
+            I am a recent computer science graduate focused on backend and full-stack development. I enjoy building projects that improve my understanding of APIs, databases, frontend fundamentals, and deployment. I'm currently looking for opportunities where I can contribute to meaningful products and continue to learn from experienced engineers.
+          </p>
+        </div>
       </div>
     </section>
 
-    <section id="skills" class="section alt-bg">
+    <section id="skills" class="section">
       <div class="container">
-        <h2>Skills</h2>
+        <div class="section-header">
+          <h2>Technical Skills</h2>
+          <p class="subtitle">Technologies I've been working with recently.</p>
+        </div>
         <div class="skills-grid">
           <article class="card">
             <h3>Frontend</h3>
-            <p>HTML, CSS, JavaScript, responsive design</p>
+            <p>HTML5, CSS3, JavaScript (ES6+), Responsive Design Fundamentals</p>
           </article>
           <article class="card">
             <h3>Backend</h3>
-            <p>Python, FastAPI, REST APIs</p>
+            <p>Python, FastAPI, RESTful API Design</p>
           </article>
           <article class="card">
             <h3>Database</h3>
-            <p>PostgreSQL, SQL, schema design</p>
+            <p>PostgreSQL, SQL Queries, Schema Design & Optimization</p>
           </article>
           <article class="card">
-            <h3>Tools</h3>
-            <p>Git, GitHub, VS Code, Postman</p>
+            <h3>Tools & Deployment</h3>
+            <p>Git, GitHub, VS Code, Postman, Vercel/Render</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="projects" class="section alt-bg">
       <div class="container">
-        <h2>Projects</h2>
+        <div class="section-header">
+          <h2>Featured Projects</h2>
+          <p class="subtitle">Some of the things I've built to apply my skills.</p>
+        </div>
 
         <div class="projects-grid">
           <article class="card project-card">
             <h3>Task Manager API</h3>
             <p>
-              A REST API built with FastAPI and PostgreSQL for creating, reading, and managing tasks.
+              A robust REST API built with FastAPI and PostgreSQL for creating, reading, updating, and managing tasks with user authentication.
             </p>
             <p class="project-stack">FastAPI · Python · PostgreSQL</p>
             <div class="project-links">
-              <a href="https://github.com/SalsaBandit/Task-tracker-api" target="_blank">Project Repo</a>
+              <a href="https://github.com/SalsaBandit/Task-tracker-api" target="_blank">View Repository</a>
             </div>
           </article>
 
           <article class="card project-card">
             <h3>Weather Dashboard</h3>
             <p>
-              A responsive weather app that fetches current weather and forecast data from the OpenWeather API.
+              A responsive weather application that fetches current weather and 5-day forecast data from the OpenWeather API, featuring search history.
             </p>
-            <p class="project-stack">HTML · CSS · JavaScript · API</p>
+            <p class="project-stack">HTML · CSS · JavaScript · OpenWeather API</p>
             <div class="project-links">
-              <a href="https://github.com/SalsaBandit/weather-dashboard" target="_blank">Project Repo</a>
+              <a href="https://github.com/SalsaBandit/weather-dashboard" target="_blank">View Repository</a>
             </div>
           </article>
 
           <article class="card project-card">
-            <h3>Next Project</h3>
+            <h3>Portfolio Website</h3>
             <p>
-              This card can later become your expense tracker, portfolio backend integration, or another full-stack app.
+              A personal portfolio website built from scratch with semantic HTML, modern CSS variables, and vanilla JavaScript for interactivity.
             </p>
-            <p class="project-stack">Coming soon</p>
+            <p class="project-stack">HTML · CSS · JavaScript</p>
+            <div class="project-links">
+              <a href="https://github.com/SalsaBandit/SalsaBandit.github.io" target="_blank">View Repository</a>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section alt-bg">
+    <section id="contact" class="section">
       <div class="container narrow">
-        <h2>Contact</h2>
-        <p>If you want to reach me, feel free to connect through Email, LinkedIn.</p>
+        <div class="section-header">
+          <h2>Get In Touch</h2>
+          <p class="subtitle">I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+        </div>
         <div class="contact-links">
-          <a href="mailto:aviaaron2003@gmail.com">aviaaron2003@gmail.com</a>
-          <a href="https://linkedin.com/in/avi-aaron-batchu" target="_blank">LinkedIn</a>
+          <a href="mailto:aviaaron2003@gmail.com">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 12px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            aviaaron2003@gmail.com
+          </a>
+          <a href="https://linkedin.com/in/avi-aaron-batchu" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 12px;"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            LinkedIn Profile
+          </a>
         </div>
       </div>
     </section>
