@@ -1,3 +1,18 @@
-Personal Portfolio Website
+# Personal Portfolio Website
 
-This is a personal portfolio website built using HTML, CSS, and JavaScript. It showcases my projects, skills, and contact information.
+My personal portfolio website showcasing my projects,experience, skills, and contact information.
+
+## Live Site
+[Visit Portfolio](https://SalsaBandit.github.io/)
+
+## Tech Stack
+- HTML
+- CSS
+- JavaScript
+- GitHub Pages
+
+## Run Locally
+Clone the repo and open `index.html` in your browser, or use Live Server in VS Code.
+
+## Deployment
+This site is deployed using GitHub Pages.
