@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-My personal portfolio website showcasing my projects,experience, skills, and contact information.
+My personal portfolio website showcasing my projects,experience, skills, contact information and other sections/details.
 
 ## Live Site
 [Visit Portfolio](https://SalsaBandit.github.io/)
