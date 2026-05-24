@@ -459,6 +459,65 @@ a {
     padding: 60px 0;
   }
 }
+/* Experience specific */
+.experience-timeline {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.experience-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.experience-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.experience-company {
+  color: var(--primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.experience-period {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.experience-details {
+  list-style: none;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.experience-details li {
+  padding-left: 1.25rem;
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+
+.experience-details li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: 600;
+}
+
 /* Certifications specific */
 .certifications-grid {
   display: grid;
