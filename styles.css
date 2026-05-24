@@ -262,7 +262,8 @@ a {
 
 /* Cards & Grids */
 .skills-grid,
-.projects-grid {
+.projects-grid,
+.achievements-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
@@ -347,6 +348,38 @@ a {
 .project-links a:hover::after,
 .contact-links a:hover::after {
   transform: translate(2px, -2px);
+}
+
+/* Achievements specific */
+.achievement-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.achievement-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.achievement-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-main);
+}
+
+.achievement-detail {
+  color: var(--primary);
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1rem !important;
+}
+
+.achievement-card p:not(.achievement-detail) {
+  color: var(--text-muted);
+  font-size: 0.95rem;
 }
 
 /* Contact */
